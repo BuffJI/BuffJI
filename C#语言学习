@@ -1,0 +1,2 @@
+# 获得激活的Excel文件，获得激活的ExcelWorkBook以及ExcelSheet都需要在ThisAddIn里面写下如下代码、
+// 
