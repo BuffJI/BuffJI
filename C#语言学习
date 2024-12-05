@@ -1,2 +1,17 @@
-# 获得激活的Excel文件，获得激活的ExcelWorkBook以及ExcelSheet都需要在ThisAddIn里面写下如下代码、
-// 
+// 获得激活的Excel文件，获得激活的ExcelWorkBook以及ExcelSheet都需要在ThisAddIn里面写下如下代码、
+// 获得激活的Application
+public Excel.Application GetActiveApplication()
+{
+    return (Excel.Application)Application.Application;
+}
+// 获得激活的Workbook
+public Excel.Workbook GetActiveWorkbook()
+{
+    return (Excel.Workbook)Application.ActiveWorkbook;
+}
+// 获得激活的Worksheet
+public Excel.Worksheet GetActiveWorksheet()
+{
+    return (Excel.Worksheet)Application.ActiveSheet;
+}
+// 其中Application.ActiveSheet 是什么意思呢？这个部分似乎不是我们自己可以定义的。
